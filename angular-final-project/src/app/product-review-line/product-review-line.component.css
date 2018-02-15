@@ -1,0 +1,76 @@
+.reviewLine {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:430px;
+    vertical-align: center;
+}
+.reviewLine .inline {
+    display: inline-block;
+}
+.reviewLine .left {
+    border-right: 2px #dfdfde solid;
+}
+.reviewLine .center {
+    border-right: 2px #dfdfde solid;
+}
+.reviewLine p {
+  font-family: 'Alegreya Sans', sans-serif;
+    color:  #727272;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.reviewLine .right .fa:hover {
+    color:  #00c8c8;
+    cursor: pointer;
+}
+.reviewLine .center p:hover {
+    color:  #00c8c8;
+    cursor: pointer;
+}
+.reviewLine .stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:70px;
+    padding-right:10px;
+}
+.reviewLine .right p{
+  position: relative;
+  top:-2px;
+}
+.reviewLine .stars .full {
+    font-family: FontAwesome;
+    color:  #ded3aa;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+.reviewLine .stars .empty {
+    font-family: FontAwesome;
+    color:  #dfdfde;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+.center p {
+    padding-right: 18px;
+}
+.right p {
+    padding-right: 8px;
+}
+.reviewLine .shareBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:180px;
+    font-family: FontAwesome;
+    color:  #8c8c8c;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}

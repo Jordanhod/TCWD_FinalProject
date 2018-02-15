@@ -1,0 +1,129 @@
+<nav class='sidebar'>
+  <h3>Find Me A Dress:</h3>
+  <ul class='filters'>
+    <li class="skirt">
+      <h4>Skirts</h4>
+      <p>choose shape:</p>
+      <div class="container">
+          <span><input type="checkbox"><img src="assets/Skirt-ALine.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Skirt-BallGown.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Skirt-Empire.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Skirt-Mermaid.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Skirt-WithSlit.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Skirt-TeaLength.jpg" alt=""></span>
+      </div>
+      <p>choose length:</p>
+      <span><input type="radio">short <input type="radio"> long  <input type="radio"> both</span>
+    </li>
+    <li class="top">
+      <h4>Tops</h4>
+      <p>choose shape:</p>
+      <div class="container">
+          <span><input type="checkbox"><img src="assets/Top-Strapless.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Top-Straps.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Top-SpecialSleeves.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Top-OffShoulder.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Top-Illusion.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Top-Highneck.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Top-Asymmetric.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Top-Halter.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Top-Uneck.jpg" alt=""></span>
+      </div>
+      <p>choose sleeves length:</p>
+      <span><input type="radio">short <input type="radio"> long  <input type="radio"> both</span>
+    </li>
+    <li class="back">
+      <h4>Backs</h4>
+      <p>choose back:</p>
+      <div class="container">
+          <span><input type="checkbox"><img src="assets/Back-Bare.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Back-Classic.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Back-Close.jpg" alt=""></span>
+          <!-- <span><input type="checkbox"><img src="assets/Back-Open.jpg" alt=""></span>
+          <span><input type="checkbox"><img src="assets/Back-Asymettric.jpg" alt=""></span> -->
+      </div>
+      <p>choose length:</p>
+      <span><input type="radio">short <input type="radio"> long  <input type="radio"> both</span>
+    </li>
+    <li class='price'>
+      <h4>Price</h4>
+      <p>choose range:</p>
+        <span><input type="range" min='5' max='500' #priceInput (input)='showPrice(priceInput.value)'></span>
+        <span><p>{{priceValue}} USD</p></span>
+    </li>
+    <li class="style-color-features">
+      <h4>Others</h4>
+      <p>choose from a list:</p>
+        <select name="style">
+          <option value="Allstyles" class='selected' selected>Select Style</option>
+          <option value="Classic">Classic</option>
+          <option value="Modern">Modern</option>
+          <option value="Romantic">Romantic</option>
+          <option value="Boho">Boho-chic</option>
+          <option value="Vintage">Vintage</option>
+          <option value="Rustic">Rustic</option>
+          <option value="Modest">Modest</option>
+        </select>
+        <select name="Dressfeature">
+          <option value="SelectColor" class='selected' selected>Add Extra Features</option>
+          <option value="Belt">Belt</option>
+          <option value="Trail">Trail</option>
+          <option value="Studs">Studs</option>
+          <option value="Color touches">Color touches </option>
+          <option value="Two pieces">Two Pieces dress</option>
+          <option value="Pockets">Pockets</option>
+          <!-- <option value="Multiple" class='multiple'>Multiple Selection</option> -->
+        </select>
+        <select name="Color">
+          <option value="AllColors" class='selected' selected>Select Color Family</option>
+          <option value="Multiple" class='multiple'>Multiple Selection</option>
+          <option value="White">Whites</option>
+          <option value="White">Ivory</option>
+          <option value="Offwhite">Nude</option>
+          <option value="Black">Champagne</option>
+          <option value="Pink">Pinks</option>
+          <option value="Red">Grays</option>
+          <option value="Red">Reds</option>
+          <option value="Black">Blacks</option>
+          <option value="Blue">Blues</option>
+          <option value="Yellow">Yellows</option>
+          <option value="Green">Greens</option>
+          <option value="Colorful">Colorful</option>
+        </select>
+    </li>
+  </ul>
+</nav>
+
+<!-- the menu for multiple choice (create a different page that handles this) -->
+
+<!-- <li class="mainlist">
+  <h5>Color Palette</h5>
+    <span class= "filterName">Reds</span><input type="checkbox" name="Reds" value="Red"> ({{num}})
+    <input type="checkbox" name="" value=""> ({{num}})
+    <input type="checkbox" name="" value=""> ({{num}})
+    <input type="checkbox" name="" value=""> ({{num}})
+
+</li>
+<li class="mainlist">
+  <h5>About Us</h5>
+    <input type="checkbox" name="" value=""> ({{num}})
+    <input type="checkbox" name="" value=""> ({{num}})
+    <input type="checkbox" name="" value=""> ({{num}})
+    <input type="checkbox" name="" value=""> ({{num}})
+
+</li>
+<li class="mainlist">
+  <h5>About Us</h5>
+    <input type="checkbox" name="" value=""> ({{num}})
+    <input type="checkbox" name="" value=""> ({{num}})
+    <input type="checkbox" name="" value=""> ({{num}})
+    <input type="checkbox" name="" value=""> ({{num}})
+
+</li>
+<li class="mainlist">
+  <h5>About Us</h5>
+    <input type="checkbox" name="" value=""> ({{num}})
+    <input type="checkbox" name="" value=""> ({{num}})
+    <input type="checkbox" name="" value=""> ({{num}})
+    <input type="checkbox" name="" value=""> ({{num}})
+</li> -->

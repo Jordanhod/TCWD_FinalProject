@@ -1,0 +1,36 @@
+.background{
+  background-image: url('https://data.whicdn.com/images/190387266/large.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding:0;
+  height: 630px;
+}
+.darken {
+  background-color: rgba(51, 51, 51, 0.75);
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  padding:0;
+  text-align: center;
+}
+.container {
+  position: relative;
+  top:30%;
+  left:35%;
+  height: 340px;
+  width: 60%;
+  border: 1px solid #dfe3e8;
+  background-color: #f4f6f8;
+  border-radius: 5px;
+  text-align: center;
+  font-family:  'Alegreya Sans', sans-serif;
+}
+p{
+  position: relative;
+  top:10%;
+  font-size: 36px;
+  margin: 0;
+  padding:0;
+  color: black;
+}

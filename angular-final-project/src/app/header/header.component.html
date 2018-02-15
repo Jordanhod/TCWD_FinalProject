@@ -1,0 +1,28 @@
+
+<div class="header">
+
+    <h1 class= 'logo'><a routerLink="">Looking Good</a></h1>
+    <p class='subtitle'>A moment of style can last forever</p>
+  <app-main-nav class='navigationBar'></app-main-nav>
+
+  <select class="currency" name="country">
+    <option value="usd" selected></option>
+    <option value="ILS">ILS</option>
+  </select>
+
+  <div class="search">
+    <input type="search" class="searchInput" placeholder="Search">
+    <span class="fa fa-search fa-1"></span>
+  </div>
+
+
+<div class="user-details-nav">
+  <ul>
+    <li *ngIf="!isLogin" routerLink = '/sign-in' #mySignIn>Sign-in</li>
+    <li *ngIf="!isLogin" routerLink = '/register' #myRegister >Register</li>
+    <li *ngIf="isLogin" routerLink = '/' #myRegister >Sign-Out</li>
+    <li *ngIf="isLogin" routerLink = '/' #myRegister ><span class="fa fa-user fa-2"></span></li>
+  </ul>
+</div>
+
+</div>

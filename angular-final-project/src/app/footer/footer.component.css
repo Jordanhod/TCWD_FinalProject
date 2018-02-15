@@ -1,0 +1,23 @@
+.footer{
+  /*position: absolute;*/
+  /*left:0;*/
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+.footer-head {
+  background-color:  #e6f9ff;
+  height: 160px;
+}
+.footer-bottom {
+  background-color:  #002633;
+  height: 40px;
+}
+.creditline {
+  position: relative;
+  color:white;
+  float: right;
+  top:-5px;
+  right: 10px;
+}

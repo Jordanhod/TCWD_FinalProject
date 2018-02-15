@@ -1,0 +1,131 @@
+.product-info {
+  position: relative;
+  left:250px;
+  top: 100px;
+  height:550px;
+  display: flex;
+  overflow: hidden;
+}
+h1 {
+  font-weight: 700;
+  font-variant: small-caps;
+  margin: 5px 2px 5px 2px;
+}
+.product_main_img {
+  height: 500px;
+  border: 2px solid #575153;
+}
+.thumbnail {
+  height: 100px;
+  border: 2px solid #575153;
+  cursor: pointer;
+}
+.product-pics {
+  position: relative;
+  padding-right: 50px;
+}
+.product-text {
+  position: relative;
+  width: 400px;
+  text-align: left;
+}
+.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  padding:0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+.link {
+  position: relative;
+  cursor: pointer;
+}
+.link a {
+  text-decoration: none;
+  color:inherit;
+}
+.ActionButtons {
+    position: relative;
+    top:100px;
+    width: 570px;
+    height: 119px;
+}
+.ActionButtons button {
+    border: 2px solid #737373;
+    box-sizing: border-box;
+    background-color: rgba(115, 115, 115, 0);
+    width: 230px;
+    height: 59px;
+    font-family: 'Montserrat', sans-serif;
+    color:  #454647;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    font-variant-caps: all-small-caps;
+}
+.ActionButtons button:hover {
+  cursor: pointer;
+}
+.ActionButtons .fa{
+    font-family: FontAwesome;
+    color:  #454647;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    padding-right:9px;
+    margin: 0;
+}
+.productTags {
+    position: relative;
+    top:80px;
+    font-family: 'Roboto', sans-serif;
+    color:  #8c8c8c;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+.store img {
+  height: 30px;
+}
+.productTags {
+    position: relative;
+    top:20px;
+    color:  #00c8c8;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 14px;
+}
+.product-text .title {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #575153;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    font-variant-caps: all-small-caps;
+}
+.productTags ul {
+    position: relative;
+    left:45px;
+    top:-52px;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    flex-wrap: wrap;
+}
+.productTags li {
+  margin-right: 5px;
+}
+.productTags li:hover{
+  cursor: pointer;
+}

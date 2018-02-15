@@ -1,0 +1,25 @@
+.product-page {
+  position: absolute;
+  top:350px;
+  width: 100%;
+  min-width: 1200px;
+  height: 900px;
+  background-image: url('https://data.whicdn.com/images/190387266/large.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #575153;
+  overflow: hidden;
+}
+h4 {
+  position: relative;
+  left:250px;
+  top: 70px;
+  color: #575153;
+  font-weight: 700;
+  font-variant: small-caps;
+  font-size: 20px;
+}
+app-footer{
+  position: relative;
+  top:1200px;
+}

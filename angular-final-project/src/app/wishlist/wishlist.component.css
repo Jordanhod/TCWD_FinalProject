@@ -1,0 +1,80 @@
+.wishlist{
+  background-image: url('https://data.whicdn.com/images/190387266/large.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding:0;
+  height: 800px;
+  text-align: center;
+}
+h1 {
+  position: relative;
+  top:130px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.menu {
+  position: relative;
+  top:160px;
+  left:300px;
+}
+.menu .fa {
+  margin:3px;
+}
+table {
+  position: relative;
+  background-color: rgba(95, 95, 95, 0.90);
+  left:27%;
+  top:30%;
+  width:700px;
+  text-align: center;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.headers th{
+  font-weight: 600px;
+  font-variant: all-small-caps;
+  font-size: 24px;
+  border-bottom: 2px solid grey;
+  border-radius: 5px;
+}
+.rows {
+  height: 115px;
+  border-bottom: 1px solid black;
+  /* color: whitesmoke; */
+}
+.productPic img{
+  height:100px;
+}
+.productDesigner img {
+  height: 15px;
+  padding: 4px;
+  border: 1px solid grey;
+  background-color: white;
+}
+.contactMe {
+border-radius: 10px;
+background-color: #88CAEC;
+border:1px solid #316986;
+color: #1D3B4B;
+font-family: 'Alegreya Sans', sans-serif;
+font-variant: all-small-caps;
+font-size: 18px;
+font-weight: 600;
+}
+.contactMe .fa-phone {
+color: #1D3B4B;
+position: relative;
+top:2px;
+}
+.services .icons {
+width:60px;
+position: relative;
+left:10px;
+}
+.services .fa {
+  margin-left: 5px;
+}
+.services .fa:hover{
+cursor: pointer;
+}

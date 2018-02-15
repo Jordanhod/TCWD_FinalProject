@@ -1,0 +1,48 @@
+<app-header></app-header>
+<div class="wishlist">
+  <h1>Wishlist</h1>
+  <span class="menu">
+    <span class='fa fa-plus fa-2'></span>
+    <span class=' fa fa-filter fa-2'></span>
+    <span class='fa fa-share-alt fa-2'></span>
+    <span class='fa fa-bars fa-2'></span>
+  </span>
+  <table>
+    <tr class='headers'>
+      <th>Picture</th>
+      <th>Name</th>
+      <th>Cost</th>
+      <th>Designer</th>
+      <th>Services</th>
+    </tr>
+    <tr class='rows'>
+      <td class='productPic'><a routerLink='../../product/{{Product.name}}'><img src="{{Product.pics[0]}}" alt="Product.name"></a></td>
+      <td class='productName'>{{Product.name}}</td>
+      <td class='productCost'>{{Product.cost | currency:Product.currency:symbol}}</td>
+      <td class='productDesigner'><img src="{{Product.designer}}" alt=""></td>
+      <td class = 'services'>
+        <button class='contactMe'><span class='fa fa-phone fa-2'></span> Contact Me</button>
+        <span class="icons">
+          <span class='fa fa-trash fa-2'></span>
+          <span class='fa fa-share-alt fa-2'></span>
+          <!-- <span class='fa fa-plus fa-2'></span> -->
+        </span>
+      </td>
+    </tr>
+    <tr class='rows'>
+      <td class='productPic'><img src="{{Product.pics[0]}}" alt="Product.name"></td>
+      <td class='productName'>{{Product.name}}</td>
+      <td class='productCost'>{{Product.cost | currency:Product.currency:symbol}}</td>
+      <td class='productDesigner'><img src="{{Product.designer}}" alt=""></td>
+      <td class = 'services'>
+        <button class='contactMe'><span class='fa fa-phone fa-2'></span> Contact Me</button>
+        <span class="icons">
+          <span class='fa fa-trash fa-2'></span>
+          <span class='fa fa-share-alt fa-2'></span>
+          <!-- <span class='fa fa-plus fa-2'></span> -->
+        </span>
+      </td>
+    </tr>
+  </table>
+</div>
+<app-footer></app-footer>

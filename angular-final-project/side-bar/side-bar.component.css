@@ -1,0 +1,117 @@
+.sidebar {
+  overflow: hidden;
+  /* background-color: #004d66	; */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwKe514Kep2fcM9pAjgf-4szxKKZc_Rqo4mOBowI4F5D6EDiIOBw');
+  /* background-image: url("assets//background.jpg"); */
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  min-width: 1300px;
+  background-size: cover;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+  position: absolute;
+  top:150px;
+  left:0px;
+  font-family: 'Alegreya Sans', sans-serif;
+  color: whitesmoke;
+  text-align: top;
+  font-variant: small-caps;
+  border-top: 2px ridge #c2d8fc;
+  border-radius: 0px 0px 20px 20px;
+}
+h3 {
+  /* padding: 0px 0px 0px 10px ; */
+  /* margin: 0; */
+  float: left;
+  position: relative;
+  left:15px;
+  top:10px;
+  letter-spacing: 1px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-variant: small-caps;
+  font-size: 32px;
+  width: 105px;
+}
+h4{
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+ul {
+  margin: 0;
+  position: absolute;
+  left:95px;
+  top: 0px;
+  overflow: hidden;
+  min-width: 1200px;
+}
+li {
+  list-style: none;
+  padding: 5px 20px 5px 5px;
+  display: inline-block;
+  text-align: top;
+}
+p {
+  margin: 1px;
+}
+.skirt {
+  position: relative;
+  top:-43px;
+  /* border-bottom: 1px solid gray; */
+}
+.top {
+  /* border-bottom: 1px solid gray; */
+}
+.skirt img{
+  border: 1px solid black;
+  height:50px;
+}
+.skirt .container {
+  position: relative;
+  display: flex;
+  width:300px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.top img{
+  height:45px;
+  border: 1px solid black;
+}
+.top .container {
+  display: flex;
+  width:340px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.top {
+  position: relative;
+  /* top:-65px; */
+
+}
+.back img{
+  /* border: 2px solid black; */
+  height:40px;
+}
+.back {
+  position: relative;
+  top:-58px;
+}
+.style-color-features {
+  width:150px;
+  position: relative;
+  top:-40px;
+}
+.style-color-features select {
+  margin: 10px 0px 10px 0px;
+}
+.price {
+  position: relative;
+  top:-74px;
+}
+.price input {
+  margin: 20px 0 10px 0;
+}
+.price span p{
+  position: relative;
+  left:27%;
+}

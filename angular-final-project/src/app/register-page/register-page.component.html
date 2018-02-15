@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="background">
+  <div class="darken">
+    <div class="container">
+      <div class="SignInTab">
+        <a routerLink='/sign-in'>Sign-in</a>
+      </div>
+      <div class="RegisterTab">
+        <span class='SignInTag'>Register</span>
+      </div>
+      <h1>New User Details</h1>
+      <form method="post" #registerform = "ngForm" (ngsubmit) = 'onSubmit(registerform)'>
+          <input required type="email" name='email' placeholder="Email address" #myEmail='ngModel' [(ngModel)] = 'myEmail.input' [style.border]='(myEmail.valid || myEmail.untouched) ? none:"red 1px solid"'>
+          <input required type="password" name='password' placeholder="Password" #myPassword='ngModel' [(ngModel)] = 'myPassword.input' [style.border]='(myPassword.valid || myPassword.untouched) ? none:"red 1px solid"' >
+          <input required type="password" name='passwordRepeat' placeholder="Type password again" #myPasswordRepeat='ngModel' [(ngModel)] = 'myPasswordRepeat.input' [style.border]='(myPasswordRepeat.valid || myPasswordRepeat.untouched) ? none:"red 1px solid"'>
+          <button type="submit" (click)='comparePass(myEmail.input, myPassword.input, myPasswordRepeat.input)'>Create Your Account</button>
+      </form>
+      <p class='errorMessage'>{{errorMessage}}</p>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

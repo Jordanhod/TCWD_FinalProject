@@ -1,0 +1,97 @@
+.header{
+  height:150px;
+  position: absolute;
+  left:0px;
+  top:0px;
+  overflow: hidden;
+  width: 1520px;
+  background-repeat: no-repeat;
+  /* background-image: url('https://s8.favim.com/610/151006/ariana-grande-beach-blue-color-Favim.com-3400625.jpg'); */
+  background-size: cover;
+  border-bottom: 2px ridge #c2d8fc;
+  /* background-color: #0086b3; */
+  background: linear-gradient(to bottom right, #968b99, #f5cffc);
+  margin:0;
+  padding: 0;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.logo{
+  margin:0;
+  padding: 0;
+  position: relative;
+  left:20px;
+  top:10px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 3px;
+  width:300px;
+  color:#090628;
+  font-size: 50px;
+}
+.subtitle{
+  position: relative;
+  left:20px;
+  color:#130e44;
+  font-family: 'Lobster', cursive;
+  font-weight: 100;
+  font-style: normal;
+  width:300px;
+  font-size: 20px;
+}
+.navigationBar {
+  position: relative;
+  left:500px;
+  top:-30px;
+  color:#130e44;
+}
+.currency {
+  align-self: right;
+  position: absolute;
+  left:95%;
+  top: 20.5%;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-image: url('http://www.iconarchive.com/download/i86350/custom-icon-design/round-world-flags/USA.ico');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.search {
+  position: absolute;
+  align-self: left;
+  left:85%;
+  top: 63%;
+}
+.fa-search {
+position: relative;
+right: 20px;
+padding:0;
+margin: 0;
+font-size: 12px;
+color:gray;
+ }
+.user-details-nav {
+  position: absolute;
+  left:85%;
+  top:25%;
+}
+.user-details-nav ul{
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  margin:0;
+  padding: 0;
+}
+.user-details-nav li{
+list-style: none;
+color:#090628;
+font-family: 'Lobster', sans-serif;
+font-size: 18px;
+}
+.user-details-nav li:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color:inherit;
+  width:300px;
+}

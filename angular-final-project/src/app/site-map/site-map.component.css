@@ -1,0 +1,21 @@
+nav {
+  position: absolute;
+  left: 300px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+ul {
+  padding: 0;
+  margin:0;
+}
+.filters{
+ display: flex;
+  width: 800px;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+}
+
+h3 {
+  position: relative;
+}
