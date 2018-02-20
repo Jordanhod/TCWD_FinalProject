@@ -17,7 +17,7 @@
 .container {
   position: relative;
   top:30%;
-  left:35%;
+  left:20%;
   height: 340px;
   width: 60%;
   border: 1px solid #dfe3e8;
@@ -26,11 +26,45 @@
   text-align: center;
   font-family:  'Alegreya Sans', sans-serif;
 }
-p{
+h4{
   position: relative;
-  top:10%;
-  font-size: 36px;
+  top:3%;
+  font-size: 30px;
   margin: 0;
   padding:0;
   color: black;
+}
+.goto{
+  position: relative;
+  top:15%;
+  width: 700;
+}
+.AddToWishlist {
+    position: relative;
+    float:left;
+    border: 2px solid #737373;
+    box-sizing: border-box;
+    background-color: rgba(115, 115, 115, 0);
+    width: 230px;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    color:  #454647;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    font-variant-caps: all-small-caps;
+}
+.AddToWishlist:hover {
+  cursor: pointer;
+}
+.AddToWishlist .fa{
+    font-family: FontAwesome;
+    color:  #454647;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    padding-right:9px;
+    margin: 0;
 }

@@ -5,38 +5,38 @@ const session = require('express-session')
 const Sequelize = require('sequelize');
 
 router.get('/status', (req,res)=>{
-  // console.log(req.session, req.session.id, req.session.IsValid);
   let IsValid = req.session.IsValid;
   res.json({IsValid});
 })
 
-router.post('/try', (req,res)=>{
-    let email = req.body.email;
+router.post('/login', async (req,res)=>{
+    let userEmail = req.body.email;
     let userPassword = req.body.password;
-    if (!email || !userPassword){
+    if (!userEmail || !userPassword){
       req.session.IsValid = false;
       res.sendStatus(400)}
     else {
-      console.log(req.session, req.session.id, email, password);}
-      res.json(users.loginRequest(email, userPassword));
+      req.session.email = userEmail; req.session.IsValid = true;
+      console.log(req.session, req.session.id, userEmail, userPassword);}
+      res.json(await users.loginRequest(userEmail, userPassword));
 })
 
 router.post('/register', async (req, res)=>{
-    let email = req.body.email;
+    let userEmail = req.body.email;
     let userPassword = req.body.password;
-    if (!email || !userPassword){
+    if (!userEmail || !userPassword){
       req.session.IsValid = false;
       res.sendStatus(400)}
     else {
-          req.session.email = email; req.session.IsValid = true;
+          req.session.email = userEmail; req.session.IsValid = true;
           console.log(req.session, req.session.id, req.session.IsValid);}
-          res.json(await users.registerSQL(email, userPassword));
+          res.json(await users.registerSQL(userEmail, userPassword));
 })
 
 router.get('/sign-out', (req, res)=>{
     req.session.IsValid = false;
     console.log(req.session.IsValid);
-    res.json({IsValid: req.session.IsValid});
+    res.json({IsValid: false});
 });
 
 router.post('/sign-in', (req, res)=>{

@@ -1,7 +1,7 @@
 
 <div class="header">
 
-    <h1 class= 'logo'><a routerLink="">Looking Good</a></h1>
+    <h1 class= 'logo'><a routerLink="/">Looking Good</a></h1>
     <p class='subtitle'>A moment of style can last forever</p>
   <app-main-nav class='navigationBar'></app-main-nav>
 
@@ -20,8 +20,8 @@
   <ul>
     <li *ngIf="!isLogin" routerLink = '/sign-in' #mySignIn>Sign-in</li>
     <li *ngIf="!isLogin" routerLink = '/register' #myRegister >Register</li>
-    <li *ngIf="isLogin" routerLink = '/' #myRegister >Sign-Out</li>
-    <li *ngIf="isLogin" routerLink = '/' #myRegister ><span class="fa fa-user fa-2"></span></li>
+    <li *ngIf="isLogin" routerLink = '/registered' #myRegister ><span class="fa fa-user fa-2"></span></li>
+    <li *ngIf="isLogin" routerLink = '/' #myRegister (click)="signOut()">Sign-Out</li>
   </ul>
 </div>
 

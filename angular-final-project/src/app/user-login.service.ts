@@ -9,41 +9,37 @@ import 'rxjs/add/operator/map';
 export class UserLoginService {
 
   constructor(private http: Http) {
-    // this.register('jordanhod@gmail.com', '11').subscribe(res=>console.log(res));
-    // this.userLogin.subscribe(isLogin => {
-    //   if(isLogin==true) console.log('true');
-    //   else console.log('false')});
+    // this.signIn('jordanhod@gmail.com', '11').subscribe(res=>console.log(res));
   }
 
+  // public userDetails: Subject<Object> = new Subject<Object>();
 private userLoginStatus:boolean = false;
-public userLogin = new Subject<boolean>();
-public userLink = new Subject<string>();
-// public userDetails: Subject<Object> = new Subject<Object>();
-public registrationURL = '/registered';
+public userLogin: Subject<boolean> = new Subject<boolean>();
 
 
 register(email, password) {
-    console.log('service', email, password);
+    this.userLoginStatus = true;
+    this.userLogin.next(true);
     return this.http.post('/api/myAccount/register', {email, password})
     .map(res=>res.json())
   }
 
+signIn(email, password) {
+  this.userLoginStatus = true;
+  this.userLogin.next(true);
+  return this.http.post('/api/myAccount/login', {email, password})
+  .map(res=>res.json())
+}
 
   loginStatus(){
-    this.validateUser().subscribe((res)=>{
-      console.log('status', res.IsValid);
-      this.userLogin.next(res.IsValid);})
-    return this.validateUser()
-  }
-
-  validateUser(){
     return this.http.get('/api/myAccount/status')
              .map(res=>res.json());
   }
 
+
   signOut(){
     this.userLoginStatus = false;
-    this.userLogin.next(this.userLoginStatus);
+    this.userLogin.next(false);
     return this.http.get('/api/myAccount/sign-out')
           .map(res=>res.json())
   }

@@ -1,13 +1,18 @@
-const users = require ('./users');
 const bcrypt = require ('bcrypt');
 const saltRounds = 10;
 const Sequelize = require('sequelize');
+const db = require ('../db');
+
+const Users = db.define('users',
+{email: Sequelize.STRING,
+ password: Sequelize.DECIMAL},
+{ timestamps: false });
 
 
 module.exports = {
 
-  loginRequest(email, userPassword) {
-    return users.Users.findOne({email})
+  loginRequest(userEmail, userPassword) {
+    return Users.findOne({email: userEmail})
     .then(userFound => {
       if(!userFound)
         return null;
@@ -26,7 +31,7 @@ module.exports = {
     return new Promise((resolve, reject) => {
     bcrypt.genSalt(saltRounds, function(err, salt) {
           bcrypt.hash(userPassword, salt, function(err, hashpassword){
-          users.Users.create({email :email, password: hashpassword})
+          Users.create({email :email, password: hashpassword})
           .then(()=>{resolve({status: '/registered', isValid: true});
           // .catch((rej)=>console.log(rej, email, hashpassword));
           })})

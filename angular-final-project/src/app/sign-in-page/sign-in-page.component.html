@@ -10,10 +10,11 @@
       </div>
       <h1>Sign-in with Email</h1>
       <form  #myForm='ngForm' (ngsubmit) = 'onSubmit(myForm)' method="post">
-          <input name="Email" type="email" placeholder="Email address" #EmailInput = 'ngModel' [(ngModel)] = 'input.email'>
-          <input name="Password" type="password" placeholder="Password" #PasswordInput = 'ngModel' [(ngModel)] = 'input.password'>
-          <button name="submitButton" type="submit" (click)='LoginRequest()' routerLink = {{LoginSuccess}} >Sign In</button>
+          <input required type="email" name='email' placeholder="Email address" #myEmail='ngModel' [(ngModel)] = 'myEmail.input' [style.border]='(myEmail.valid || myEmail.untouched) ? none:"red 1px solid"'>
+          <input required type="password" name='password' placeholder="Password" #myPassword='ngModel' [(ngModel)] = 'myPassword.input' [style.border]='(myPassword.valid || myPassword.untouched) ? none:"red 1px solid"' >
+          <button name="submitButton" type="submit" (click)= 'loginRequest(myEmail.input, myPassword.input)'>Sign In</button>
       </form>
+
       <a class='forgotPass' routerLink="/forgot">forgot password</a>
 
     </div>

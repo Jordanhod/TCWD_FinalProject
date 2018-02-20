@@ -43,6 +43,21 @@ Brides = [{
   Rating: 4.3,
   link: 'https://www.bhldn.com/product/dakota-gown'
 },
+
+//
+// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('Top-Strapless','Dakota Gown');
+//
+// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('Back-Bare','Dakota Gown');
+//
+// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('Skirt-Mermaid','Dakota Gown');
+//
+// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('Short-Sleeves','Dakota Gown');
+//
+// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('Classic','Dakota Gown');
+//
+// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('White','Dakota Gown');
+//
+// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('Trail','Dakota Gown');
 {
   sku: 4,
   name: 'Lucca Gown',
@@ -188,11 +203,11 @@ Brides = [{
 },
 {
   sku: 17,
-  name: 'Avalon Gown',
-  pics: ['https://s7d1.scene7.com/is/image/BHLDN/33060351_011_a','https://s7d1.scene7.com/is/image/BHLDN/33060351_011_b','https://s7d1.scene7.com/is/image/BHLDN/33060351_011_c'],
-  tags: ['Top-illusion','Back-Close','Skirt-Empire','Short-Sleeves','Vintage','Ivory', 'Studs'],
+  name: 'Turner Gown',
+  pics: ['https://s7d1.scene7.com/is/image/BHLDN/44655074_011_a','https://s7d1.scene7.com/is/image/BHLDN/44655074_011_b','https://s7d1.scene7.com/is/image/BHLDN/44655074_011_c'],
+  tags: ['Uneck','Back-Close','Skirt-Empire','Long-Sleeves','Vintage','Ivory', 'Studs', 'Belt'],
   designer: 'https://www.bhldn.com/resources/bhldn/images/layout/logo_bhldn_dark_grey.svg',
-  cost: 360.00,
+  cost: 700.00,
   currency: 'USD',
   Rating: 4.0,
   link: 'https://www.bhldn.com/shop-the-bride-wedding-dresses-back-detail/avalon-gown'

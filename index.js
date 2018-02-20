@@ -19,6 +19,11 @@ app.use(bodyParser.json());
 app.use('/api/products', productsRouts);
 app.use('/api/myAccount', userRouts);
 
+//
+// app.all('*', (req, res) => {
+//   res.sendFile(path.resolve('./angular-final-project/dist/index.html'));
+// });
+
 // app.all('*', (req, res)=>{
 //   res.redirect('/');
 // res.send('404','page not found');

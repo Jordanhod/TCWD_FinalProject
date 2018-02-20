@@ -5,7 +5,6 @@ import {UserLoginService} from '../user-login.service';
   selector: 'app-my-account',
   templateUrl: './my-account.component.html',
   styleUrls: ['./my-account.component.css'],
-  providers: [UserLoginService]
 })
 export class MyAccountComponent implements OnInit {
 
@@ -17,7 +16,7 @@ isValid = false;
   ngOnInit() {
     this.login.loginStatus()
     .subscribe((res)=>{
-      this.isValid = res;
+      this.isValid = res.IsValid;
       console.log('my-account', this.isValid)
     })
   }

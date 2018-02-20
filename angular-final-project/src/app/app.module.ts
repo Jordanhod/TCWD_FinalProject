@@ -10,8 +10,6 @@ import { SearchService } from './search.service';
 import {ProductDetailsService} from './product-details.service';
 import {UserLoginService} from './user-login.service';
 
-import { UserStatusDirective } from './user-status.directive';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -76,7 +74,6 @@ const routes:Routes = [
     ShoesImgComponent,
     ShoesProductPageComponent,
     MyAccountComponent,
-    UserStatusDirective,
   ],
   imports: [
     BrowserModule,
