@@ -2,12 +2,13 @@ const express = require ('express');
 const products = require ('./products-model');
 const router = express.Router();
 
-router.get('/homepage', (req, res)=>{
-  res.json(products.getHomepage());
+router.get('/homepage', async (req, res)=>{
+  console.log('routes ok')
+  res.json(await products.getHomepageSQL());
 });
 
-router.get('/brides', (req, res)=>{
-  res.json(products.getBridesDresses());
+router.get('/brides', async (req, res)=>{
+  res.json(await products.getBridesPicsSQL());
 });
 
 router.get('/bridesmaids', (req, res)=>{

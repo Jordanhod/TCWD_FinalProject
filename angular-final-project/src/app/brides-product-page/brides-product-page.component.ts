@@ -18,11 +18,11 @@ productDetails = {};
 dresses = [];
 
 constructor(private PDetails:ProductDetailsService, private router:ActivatedRoute) {
-  this.PDetails.getBridesDresses().subscribe((bridesPageArr) => {
-    this.dresses = bridesPageArr;
+  this.PDetails.getBridesDresses().subscribe((dressesSQL) => {
+    this.dresses = dressesSQL;
     this.router.params.subscribe((param)=>{
         for (this.i = 0; this.i < this.dresses.length; this.i++) {
-            this.productName = this.dresses[this.i].name;
+            this.productName = this.dresses[this.i].product_name;
             this.ParamProductName = param.productName;
               if (this.productName == this.ParamProductName) {this.index = this.i;
               this.PDetails.getBridesProduct(this.index).subscribe((productObj)=>

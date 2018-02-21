@@ -43,21 +43,6 @@ Brides = [{
   Rating: 4.3,
   link: 'https://www.bhldn.com/product/dakota-gown'
 },
-
-//
-// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('Top-Strapless','Dakota Gown');
-//
-// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('Back-Bare','Dakota Gown');
-//
-// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('Skirt-Mermaid','Dakota Gown');
-//
-// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('Short-Sleeves','Dakota Gown');
-//
-// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('Classic','Dakota Gown');
-//
-// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('White','Dakota Gown');
-//
-// INSERT INTO `tags`(`tag_name`, `product_name`) VALUES ('Trail','Dakota Gown');
 {
   sku: 4,
   name: 'Lucca Gown',

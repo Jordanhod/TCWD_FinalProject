@@ -3,7 +3,13 @@
   <div class="bridesmaids-main">
 
     <div class="dresses-menu">
-  <app-bridesmaids-img></app-bridesmaids-img>
+      <ul>
+        <li *ngFor= 'let item of dresses'>
+          <a routerLink="/bridesmaids/{{item.name}}">
+            <img src="{{item.pics[0]}}" alt="{{item.name}}">
+          </a>
+        </li>
+      </ul>
 
     </div>`
   </div>

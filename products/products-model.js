@@ -1,23 +1,32 @@
 const brides = require ('./brides');
 const bridesmaids = require ('./bridesmaids');
 const shoes = require ('./shoes');
+const productsSQL = require ('./products');
 
 let BridesPageArr = [];
 let BridesmaidsPageArr = [];
 let ShoesPageArr =[];
 let productDetailsObj = {};
-let homepagePics = [brides.Brides[1].pics[2], brides.Brides[4].pics[2], brides.Brides[6].pics[2]]
+// let homepagePics = [brides.Brides[1].pics[2], brides.Brides[4].pics[2], brides.Brides[6].pics[2]];
+let homepageSQL = [];
 
 module.exports = {
-  getHomepage(){
-      return homepagePics;
+  getHomepageSQL(){
+    return productsSQL.Pics.findById(6)
+    .catch(rej=>console.log(rej))
+    .then(picRow => {homepageSQL[0] = picRow.pics})
+    .then(()=>{return productsSQL.Pics.findById(15)})
+    .catch(rej=>console.log(rej))
+    .then(picRow => {homepageSQL[1] = picRow.pics})
+    .then(()=>{return productsSQL.Pics.findById(21)})
+    .catch(rej=>console.log(rej))
+    .then(picRow => {homepageSQL[2] = picRow.pics})
+    .then(()=> {console.log(homepageSQL); return homepageSQL})
   },
 
-  getBridesDresses() {
-      for (i=0; i< brides.Brides.length; i++) {
-        BridesPageArr[i] =
-        {pics: brides.Brides[i].pics, name: brides.Brides[i].name};}
-    return BridesPageArr;
+  getBridesPicsSQL() {
+    return productsSQL.Pics.findAll(({where:{pic_number: 0}}))
+    .then((brides)=> {return brides})
   },
 
   getBridesmaidsDresses() {

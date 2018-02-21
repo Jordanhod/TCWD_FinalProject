@@ -26,3 +26,19 @@ app-footer {
   position: relative;
   top:1500px;
 }
+img {
+  width: 240px;
+  height: 360px;
+  border: 2px solid gray;
+}
+img:hover{
+  cursor: pointer;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+li {
+  list-style: none;
+}

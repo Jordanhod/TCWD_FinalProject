@@ -16,8 +16,8 @@ const Brides = db.define('brides',
 const Pics = db.define('pics',
 { pics: Sequelize.STRING,
   product_name: Sequelize.STRING,
-  pic_number: Sequelize.INTEGER,
- timestamps: false });
+  pic_number: Sequelize.INTEGER,},
+{ timestamps: false });
 
 module.exports = {
   Brides,

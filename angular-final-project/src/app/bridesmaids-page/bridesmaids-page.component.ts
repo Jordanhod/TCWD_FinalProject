@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ProductDetailsService} from '../product-details.service'
 
 @Component({
   selector: 'app-bridesmaids-page',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BridesmaidsPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private PDetails:ProductDetailsService) {
+    this.PDetails.getBridesmaidsDresses().subscribe((bridesPageArr) => {
+      this.dresses = bridesPageArr;})
+    }
+
+dresses = [];
 
   ngOnInit() {
   }
