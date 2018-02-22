@@ -13,7 +13,7 @@ export class UserLoginService {
   }
 
   // public userDetails: Subject<Object> = new Subject<Object>();
-private userLoginStatus:boolean = false;
+public userLoginStatus:boolean = false;
 public userLogin: Subject<boolean> = new Subject<boolean>();
 
 

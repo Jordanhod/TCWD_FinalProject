@@ -15,7 +15,7 @@ Shoes = [{
   pics: ['http://images.asos-media.com/products/asos-summer-mid-heels/8825503-1-silverglitter','http://images.asos-media.com/products/asos-summer-mid-heels/8825503-2','http://images.asos-media.com/products/asos-summer-mid-heels/8825503-3'],
   tags: ['Mid-heels','Romantic','Classic', 'Silver'],
   designer: 'https://cdn.worldvectorlogo.com/logos/asos-com.svg',
-  cost: 28,
+  cost: 28.00,
   currency: 'GBP',
   Rating: 0,
   link: 'http://www.asos.com/asos/asos-summer-mid-heels/prd/8825503'

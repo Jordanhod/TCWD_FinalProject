@@ -1,9 +1,13 @@
+<app-header></app-header>
+<app-side-bar></app-side-bar>
+<div class="product-page">
+
   <div class="product-info">
       <div class="product-pics">
-            <img class = 'product_main_img inline' #img0 src={{productDetails.pics[0]}} alt={{productDetails.name}} (click)='changePic(img0.src)'>
+            <img class = 'product_main_img inline' #img0 src={{pics[0]}} alt={{productDetails.name}} (click)='changePic(img0.src)'>
             <ul class ='inline'>
-              <li><img class = 'thumbnail' #img1 src={{productDetails.pics[1]}} alt={{productDetails.name}} (click)='changePic(img1.src)'></li>
-              <li><img class = 'thumbnail' #img2 src={{productDetails.pics[2]}} alt={{productDetails.name}} (click)='changePic(img2.src)'></li>
+              <li><img class = 'thumbnail' #img1 src={{pics[1]}} alt={{productDetails.name}} (click)='changePic(img1.src)'></li>
+              <li><img class = 'thumbnail' #img2 src={{pics[2]}} alt={{productDetails.name}} (click)='changePic(img2.src)'></li>
             </ul>
       </div>
       <div class="product-text">
@@ -26,7 +30,10 @@
             <div class="ActionButtons">
                       <button class="AddToWishlist" routerLink = '/myAccount/wishlist'><span class="fa fa-heart-o fa-3"></span>Add To Wishlist</button>
                       <button class='link'><a href='{{productDetails.link}}' target="_blank"><span class="fa fa-compress fa-2"></span>Link to Store</a></button>
-
             </div>
       </div>
   </div>
+  <!-- <app-product-page-main [productDetails]='productDetails' [pics]='pics'></app-product-page-main> -->
+  <h3>Similar Products:</h3>
+</div>
+<app-footer></app-footer>

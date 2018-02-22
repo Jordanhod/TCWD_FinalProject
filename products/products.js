@@ -2,16 +2,15 @@ const Sequelize = require('sequelize');
 const db = require ('../db');
 
 const Brides = db.define('brides',
-{ sku: Sequelize.INTEGER,
+{ type: Sequelize.STRING,
   name: Sequelize.STRING,
-  pics: Sequelize.STRING,
-  tags: Sequelize.STRING,
   designer: Sequelize.STRING,
   cost: Sequelize.DECIMAL,
   currency: Sequelize.STRING,
   rating: Sequelize.DECIMAL,
-  link: Sequelize.STRING,
-  timestamps: false });
+  link: Sequelize.STRING,},
+{ timestamps: false });
+
 
 const Pics = db.define('pics',
 { pics: Sequelize.STRING,

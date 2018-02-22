@@ -18,7 +18,6 @@ import { SiteMapComponent } from './site-map/site-map.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { BridesPageComponent } from './brides-page/brides-page.component';
-import { BridesProductPageComponent } from './brides-product-page/brides-product-page.component';
 import { ProductPageMainComponent } from './product-page-main/product-page-main.component';
 import { ProductReviewLineComponent } from './product-review-line/product-review-line.component';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
@@ -26,9 +25,7 @@ import { RegisterPageComponent } from './register-page/register-page.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { BridesmaidsPageComponent } from './bridesmaids-page/bridesmaids-page.component';
-import { BridesmaidsProductPageComponent } from './bridesmaids-product-page/bridesmaids-product-page.component';
 import { ShoesPageComponent } from './shoes-page/shoes-page.component';
-import { ShoesProductPageComponent } from './shoes-product-page/shoes-product-page.component';
 import { MyAccountComponent } from './my-account/my-account.component';
 
 const routes:Routes = [
@@ -36,9 +33,7 @@ const routes:Routes = [
   {path: 'brides', component:BridesPageComponent},
   {path: 'bridesmaids', component: BridesmaidsPageComponent},
   {path: 'shoes', component: ShoesPageComponent},
-  {path: 'brides/:productName', component: BridesProductPageComponent},
-  {path: 'bridesmaids/:productName', component: BridesmaidsProductPageComponent},
-  {path: 'shoes/:productName', component: ShoesProductPageComponent},
+  {path: 'product/:productName', component: ProductPageMainComponent},
   {path: 'sign-in', component:SignInPageComponent},
   {path: 'register', component:RegisterPageComponent},
   {path: 'registered', component:MyAccountComponent},
@@ -56,7 +51,6 @@ const routes:Routes = [
     SideBarComponent,
     HomepageComponent,
     BridesPageComponent,
-    BridesProductPageComponent,
     ProductPageMainComponent,
     ProductReviewLineComponent,
     SignInPageComponent,
@@ -64,9 +58,7 @@ const routes:Routes = [
     ForgotPasswordComponent,
     WishlistComponent,
     BridesmaidsPageComponent,
-    BridesmaidsProductPageComponent,
     ShoesPageComponent,
-    ShoesProductPageComponent,
     MyAccountComponent,
   ],
   imports: [

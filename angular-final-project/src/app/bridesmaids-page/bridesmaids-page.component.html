@@ -5,8 +5,8 @@
     <div class="dresses-menu">
       <ul>
         <li *ngFor= 'let item of dresses'>
-          <a routerLink="/bridesmaids/{{item.name}}">
-            <img src="{{item.pics[0]}}" alt="{{item.name}}">
+          <a routerLink="/product/{{item.product_name}}">
+            <img src="{{item.pics}}" alt="{{item.name}}">
           </a>
         </li>
       </ul>

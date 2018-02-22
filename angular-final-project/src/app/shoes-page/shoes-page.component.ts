@@ -9,8 +9,8 @@ import {ProductDetailsService} from '../product-details.service'
 export class ShoesPageComponent implements OnInit {
 
   constructor(private PDetails:ProductDetailsService) {
-    this.PDetails.getShoes().subscribe((shoesPageArr) => {
-      this.shoes = shoesPageArr;
+    this.PDetails.getShoes().subscribe((shoesSQL) => {
+      this.shoes = shoesSQL;
       console.log(this.shoes);
     })
     }

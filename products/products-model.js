@@ -7,8 +7,9 @@ let BridesPageArr = [];
 let BridesmaidsPageArr = [];
 let ShoesPageArr =[];
 let productDetailsObj = {};
-// let homepagePics = [brides.Brides[1].pics[2], brides.Brides[4].pics[2], brides.Brides[6].pics[2]];
+let productDetails = {};
 let homepageSQL = [];
+let pics = [];
 
 module.exports = {
   getHomepageSQL(){
@@ -25,8 +26,33 @@ module.exports = {
   },
 
   getBridesPicsSQL() {
-    return productsSQL.Pics.findAll(({where:{pic_number: 0}}))
+    return productsSQL.Pics.findAll(({where:{pic_number: 0, type: 'Brides'}}))
     .then((brides)=> {return brides})
+  },
+
+  getBridesmaidsPicsSQL() {
+    return productsSQL.Pics.findAll(({where:{pic_number: 0, type: 'Bridesmaids'}}))
+    .then((bridesmaids)=> {return bridesmaids})
+  },
+
+  getShoesPicsSQL() {
+    return productsSQL.Pics.findAll(({where:{pic_number: 0, type: 'Shoes'}}))
+    .then((Shoes)=> {return Shoes})
+  },
+
+  getProductSQL(productName) {
+    return productsSQL.Brides.findOne(({where:{name: productName}}))
+    .then((product)=> {productDetails = product})
+    .then(()=>{return productsSQL.Pics.findAll(({where:{product_name: productName}}))})
+    .catch(rej=>console.log(rej))
+    .then((picsArr)=> {pics = [picsArr[0].pics, picsArr[1].pics, picsArr[2].pics];})
+    .then(()=> {return {productDetails, pics}})
+  },
+
+
+  getShoesPicsSQL() {
+    return productsSQL.Pics.findAll(({where:{pic_number: 0, type: 'Shoes'}}))
+    .then((shoes)=> {return shoes})
   },
 
   getBridesmaidsDresses() {

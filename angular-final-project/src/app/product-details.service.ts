@@ -32,6 +32,11 @@ getShoes(){
       .map(res=>res.json());
 }
 
+getProductSQL(productName){
+  return this.http.post('/api/products/collection', {productName})
+      .map(res=>res.json());
+}
+
 getBridesProduct(productID){
   this.index = productID;
   return this.http.post('/api/products/brides', {productID})

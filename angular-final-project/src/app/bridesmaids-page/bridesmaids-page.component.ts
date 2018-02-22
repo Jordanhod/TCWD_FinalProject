@@ -9,8 +9,8 @@ import {ProductDetailsService} from '../product-details.service'
 export class BridesmaidsPageComponent implements OnInit {
 
   constructor(private PDetails:ProductDetailsService) {
-    this.PDetails.getBridesmaidsDresses().subscribe((bridesPageArr) => {
-      this.dresses = bridesPageArr;})
+    this.PDetails.getBridesmaidsDresses().subscribe((dressesSQL) => {
+      this.dresses = dressesSQL;})
     }
 
 dresses = [];

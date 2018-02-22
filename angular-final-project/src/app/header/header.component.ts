@@ -17,7 +17,7 @@ isLogin:boolean = this.login.userLoginStatus;
 
 signOut(){
 this.login.signOut().subscribe((res) =>{
-  console.log('sign-out', res);}
+  console.log('sign-out', res);})
 }
 
 ngOnInit() {

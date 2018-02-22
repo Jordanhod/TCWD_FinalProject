@@ -45,14 +45,14 @@
 }
 .reviewLine .stars .full {
     font-family: FontAwesome;
-    color:  #ded3aa;
+    color:  #c4aa48;
     font-size: 16px;
     font-weight: 400;
     text-align: left;
 }
 .reviewLine .stars .empty {
     font-family: FontAwesome;
-    color:  #dfdfde;
+    color:  #bab5b4;
     font-size: 16px;
     font-weight: 400;
     text-align: left;
