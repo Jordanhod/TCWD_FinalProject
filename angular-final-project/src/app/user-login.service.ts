@@ -12,7 +12,6 @@ export class UserLoginService {
     // this.signIn('jordanhod@gmail.com', '11').subscribe(res=>console.log(res));
   }
 
-  // public userDetails: Subject<Object> = new Subject<Object>();
 public userLoginStatus:boolean = false;
 public userLogin: Subject<boolean> = new Subject<boolean>();
 

@@ -22,8 +22,7 @@ this.login.signOut().subscribe((res) =>{
 
 ngOnInit() {
     this.login.userLogin.subscribe((res) =>{
-      console.log('header got it', res);
-      this.isLogin = res})
+      console.log('header got it', res);})
   }
 
 }

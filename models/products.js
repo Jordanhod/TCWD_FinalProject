@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require ('../db');
 
-const Brides = db.define('brides',
+const Products = db.define('products',
 { type: Sequelize.STRING,
   name: Sequelize.STRING,
   designer: Sequelize.STRING,
@@ -13,12 +13,16 @@ const Brides = db.define('brides',
 
 
 const Pics = db.define('pics',
-{ pics: Sequelize.STRING,
+{ type: Sequelize.STRING,
+  pics: Sequelize.STRING,
   product_name: Sequelize.STRING,
-  pic_number: Sequelize.INTEGER,},
+  product_id: Sequelize.INTEGER,
+  pic_number: Sequelize.INTEGER},
 { timestamps: false });
 
+Pics.belongsTo(Products, {as: 'product', foreignKey: 'product_id'});
+
 module.exports = {
-  Brides,
+  Products,
   Pics
 }

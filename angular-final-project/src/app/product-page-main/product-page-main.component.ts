@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {ProductDetailsService} from '../product-details.service';
-import {ActivatedRoute}  from '@angular/router';
+import {WishlistService} from '../wishlist.service';
+import {ActivatedRoute,  Router}  from '@angular/router';
 
 @Component({
   selector: 'app-product-page-main',
@@ -11,12 +12,13 @@ export class ProductPageMainComponent implements OnInit {
 
   productName:string = '';
   ParamProductName:string = '';
-  productDetails = {};
+  productDetails = {id:1};
   pics = [];
   dresses = [];
 
-  constructor(private PDetails:ProductDetailsService, private router:ActivatedRoute) {
-      this.router.params.subscribe((param)=>{
+  constructor(private PDetails:ProductDetailsService, private wish:WishlistService,
+              private activeRoute:ActivatedRoute, private router:Router) {
+      this.activeRoute.params.subscribe((param)=>{
             this.productName = param.productName;
             this.PDetails.getProductSQL(this.productName)
             .subscribe((productObj)=>
@@ -37,18 +39,13 @@ export class ProductPageMainComponent implements OnInit {
     }
   }
 
-
-//
-// changePic(src){
-//   if (src === this.productDetails.pics[1]){
-//     this.productDetails.pics[1] = this.productDetails.pics[0];
-//     this.productDetails.pics[0] = src;
-//   }
-//   else if (src === this.productDetails.pics[2]){
-//     this.productDetails.pics[2] =  this.productDetails.pics[0];
-//     this.productDetails.pics[0] = src;
-//   }
-// }
+  addToWishlist(){
+    console.log(this.productDetails.id)
+    this.wish.addItem(this.productDetails.id).subscribe((res)=>{
+      // console.log(res);
+      this.router.navigate([res.status]);
+    })
+  }
 
   ngOnInit() {}
 

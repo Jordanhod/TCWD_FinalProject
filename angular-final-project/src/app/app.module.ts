@@ -9,6 +9,8 @@ import { HttpModule } from '@angular/http';
 import { SearchService } from './search.service';
 import {ProductDetailsService} from './product-details.service';
 import {UserLoginService} from './user-login.service';
+import { WishlistService } from './wishlist.service';
+import { AuthGuard } from './auth.guard';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -36,9 +38,10 @@ const routes:Routes = [
   {path: 'product/:productName', component: ProductPageMainComponent},
   {path: 'sign-in', component:SignInPageComponent},
   {path: 'register', component:RegisterPageComponent},
-  {path: 'registered', component:MyAccountComponent},
+  {path: 'registered', component:MyAccountComponent, canActivate: [AuthGuard]},
   {path: 'forgot', component:ForgotPasswordComponent},
-  {path: 'myAccount/wishlist', component:WishlistComponent},
+  {path: 'myAccount/wishlist', component:WishlistComponent, canActivate: [AuthGuard]},
+  {path: '**', redirectTo: 'sign-in', pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -71,7 +74,9 @@ const routes:Routes = [
   providers: [
     SearchService,
     ProductDetailsService,
-    UserLoginService
+    UserLoginService,
+    WishlistService,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })

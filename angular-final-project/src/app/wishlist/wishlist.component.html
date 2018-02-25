@@ -19,14 +19,14 @@
       <th>Services</th>
     </tr>
     <tr class='rows' *ngFor = 'let item of Products'>
-      <td class='productPic'><a routerLink='../../product/{{item.name}}'><img src="{{item.pics[0]}}" alt="item.name"></a></td>
-      <td class='productName'>{{item.name}}</td>
-      <td class='productCost'>{{item.cost | currency:item.currency:symbol}}</td>
-      <td class='productDesigner'><img src="{{item.designer}}" alt=""></td>
+      <td class='productPic'><a routerLink='../../product/{{item.product.name}}'><img src="{{item.pics}}" alt="item.product.name"></a></td>
+      <td class='productName'>{{item.product.name}}</td>
+      <td class='productCost'>{{item.product.cost | currency:item.product.currency:symbol}}</td>
+      <td class='productDesigner'><img src="{{item.product.designer}}" alt=""></td>
       <td class = 'services'>
         <button class='contactMe'><span class='fa fa-phone fa-2'></span> Contact Me</button>
         <span class="icons">
-          <span class='fa fa-trash fa-2'></span>
+          <span class='fa fa-trash fa-2' (click)="removeItem(item.product.id)"></span>
           <span class='fa fa-share-alt fa-2'></span>
           <!-- <span class='fa fa-plus fa-2'></span> -->
         </span>
