@@ -10,48 +10,31 @@ export class ProductDetailsService {
 
   constructor(private http: Http) {}
 
-index = 0;
-productDetails = {};
+  productDetails = {};
 
-getHomepage(){
-  return this.http.get('/api/products/homepage')
-      .map(res=>res.json());
-}
-getBridesDresses(){
-  return this.http.get('/api/products/brides')
-      .map(res=>res.json());
-}
+  getHomepage(){
+    return this.http.get('/api/products/homepage')
+        .map(res=>res.json());
+  }
 
-getBridesmaidsDresses(){
-  return this.http.get('/api/products/bridesmaids')
-      .map(res=>res.json());
-}
+  getBridesDresses(){
+    return this.http.get('/api/products/brides')
+        .map(res=>res.json());
+  }
 
-getShoes(){
-  return this.http.get('/api/products/shoes')
-      .map(res=>res.json());
-}
+  getBridesmaidsDresses(){
+    return this.http.get('/api/products/bridesmaids')
+        .map(res=>res.json());
+  }
 
-getProductSQL(productName){
-  return this.http.post('/api/products/collection', {productName})
-      .map(res=>res.json());
-}
+  getShoes(){
+    return this.http.get('/api/products/shoes')
+        .map(res=>res.json());
+  }
 
-getBridesProduct(productID){
-  this.index = productID;
-  return this.http.post('/api/products/brides', {productID})
-      .map(res=>res.json());
-}
+  getProduct(productName){
+    return this.http.post('/api/products/collection', {productName})
+        .map(res=>res.json());
+  }
 
-getBridesmaidsProduct(productID){
-  this.index = productID;
-  return this.http.post('/api/products/bridesmaids', {productID})
-      .map(res=>res.json());
-}
-
-getShoesProduct(productID){
-  this.index = productID;
-  return this.http.post('/api/products/shoes', {productID})
-      .map(res=>res.json());
-}
 }

@@ -95,3 +95,60 @@ a {
   color:inherit;
   width:300px;
 }
+
+@media screen and (max-width: 800px) {
+      .header{
+        height:160px;
+        width: 1100px;
+      }
+      .logo{
+        position: relative;
+        left:20px;
+        top:10px;
+        width:200px;
+        font-size: 30px;
+      }
+      .subtitle{
+        position: relative;
+        left:20px;
+        width:190px;
+        font-size: 12px;
+      }
+      .navigationBar {
+        position: absolute;
+        left:150px;
+        width:500px;
+        top:100px;
+        font-size: 14px;
+      }
+      .user-details-nav {
+        position: absolute;
+        left:65%;
+        top:25%;
+      }
+      .currency {
+        position: absolute;
+        left:75%;
+        top: 20.5%;
+        height: 30px;
+        width: 30px;
+      }
+      .user-details-nav ul{
+        width: 90px;
+      }
+      .user-details-nav li{
+      font-size: 14px;
+      }
+      .search {
+        position: absolute;
+        left: 63%;
+      }
+}
+@media screen and (max-width: 400px) {
+      .navigationBar {
+        position: relative;
+        left:50px;
+        top:-50px;
+      }
+
+}

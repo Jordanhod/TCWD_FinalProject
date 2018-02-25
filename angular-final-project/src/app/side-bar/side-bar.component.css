@@ -1,7 +1,7 @@
 .sidebar {
+  z-index: 1;
   overflow: hidden;
   background-color: #546E7A;
-  /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwKe514Kep2fcM9pAjgf-4szxKKZc_Rqo4mOBowI4F5D6EDiIOBw'); */
   background-repeat: no-repeat;
   height: 200px;
   width: 100%;
@@ -19,8 +19,6 @@
   border-radius: 0px 0px 20px 20px;
 }
 h3 {
-  /* padding: 0px 0px 0px 10px ; */
-  /* margin: 0; */
   float: left;
   position: relative;
   left:15px;
@@ -56,10 +54,8 @@ p {
 .skirt {
   position: relative;
   top:-43px;
-  /* border-bottom: 1px solid gray; */
 }
 .top {
-  /* border-bottom: 1px solid gray; */
 }
 .skirt img{
   border: 1px solid black;
@@ -84,11 +80,8 @@ p {
 }
 .top {
   position: relative;
-  /* top:-65px; */
-
 }
 .back img{
-  /* border: 2px solid black; */
   height:40px;
 }
 .back {

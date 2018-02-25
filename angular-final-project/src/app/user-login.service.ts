@@ -30,17 +30,16 @@ signIn(email, password) {
   .map(res=>res.json())
 }
 
-  loginStatus(){
-    return this.http.get('/api/myAccount/status')
-             .map(res=>res.json());
-  }
+loginStatus(){
+  return this.http.get('/api/myAccount/status')
+           .map(res=>res.json());
+}
 
-
-  signOut(){
-    this.userLoginStatus = false;
-    this.userLogin.next(false);
-    return this.http.get('/api/myAccount/sign-out')
-          .map(res=>res.json())
-  }
+signOut(){
+  this.userLoginStatus = false;
+  this.userLogin.next(false);
+  return this.http.get('/api/myAccount/sign-out')
+        .map(res=>res.json())
+}
 
 }

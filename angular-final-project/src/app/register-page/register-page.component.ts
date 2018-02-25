@@ -17,25 +17,20 @@ errorMessage = '';
 IsValid = false;
 
 
-comparePass (email, password, passwordRepeat) {
-  if (password !== passwordRepeat) {this.errorMessage = "* Passwords don't match"}
-  else if (!email.includes('@')) {this.errorMessage = "* Email is not valid"}
-  else {this.errorMessage = '';
-        this.userDetails = {email, password};
-        console.log('before register', email, password);
-        this.login.register(email, password).subscribe((res)=>{
-            this.router.navigate([res.status]);
-            this.IsValid = res.IsValid;
-          });
-        }
-}
-
-
-onSubmit(form) {
-
-}
-
-  ngOnInit() {
+  comparePass (email, password, passwordRepeat) {
+    if (password !== passwordRepeat) {this.errorMessage = "* Passwords don't match"}
+    else if (!email.includes('@')) {this.errorMessage = "* Email is not valid"}
+    else {this.errorMessage = '';
+          this.userDetails = {email, password};
+          this.login.register(email, password).subscribe((res)=>{
+              this.router.navigate([res.status]);
+              this.IsValid = res.IsValid;
+            });
+          }
   }
+
+  onSubmit(form) {}
+
+  ngOnInit() {}
 
 }

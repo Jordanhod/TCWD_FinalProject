@@ -11,14 +11,7 @@ export class MyAccountComponent implements OnInit {
   constructor(private login:UserLoginService) {
   }
 
-isValid = false;
-
   ngOnInit() {
-    this.login.loginStatus()
-    .subscribe((res)=>{
-      this.isValid = res.IsValid;
-      console.log('my-account', this.isValid)
-    })
   }
 
 }

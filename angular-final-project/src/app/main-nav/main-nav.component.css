@@ -7,18 +7,26 @@ ul {
 li {
   list-style: none;
   font-size: 20px;
-  /*padding: 0 3px 6px 3px;*/
 }
 li:hover{
   color:blue;
   cursor: pointer;
 }
 .CurrentPage {
-  /*background-color: blue;*/
-  /*border: 2px darkgray solid;*/
+  background-color: blue;
   border-radius: 20%
 }
 li a {
   text-decoration: none;
   color: inherit;
 }
+/*
+@media screen and (max-width: 800px) {
+      ul {
+      width: 400px;
+      }
+
+@media screen and (max-width: 400px) {
+      ul {
+      width: 350px;
+      } */

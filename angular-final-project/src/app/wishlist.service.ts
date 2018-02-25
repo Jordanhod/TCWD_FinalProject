@@ -10,6 +10,7 @@ export class WishlistService {
 
   constructor(private http: Http) {}
 
+  private refreshRate:number = 5000;
   public myWishlist = {product:[{
     name: 'Example product',
     tags: ['Top-Highneck','Back-Close','Skirt-WithSlit','Short-Sleeves','Modern','White', 'color touches'],
@@ -22,6 +23,7 @@ export class WishlistService {
   }
 
 getWishlist(){
+  setTimeout(this.getWishlist.bind(this), this.refreshRate);
   return this.http.get('/api/myAccount/wishlist')
     .map(res=>res.json())
 }

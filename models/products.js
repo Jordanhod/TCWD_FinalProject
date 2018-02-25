@@ -20,9 +20,17 @@ const Pics = db.define('pics',
   pic_number: Sequelize.INTEGER},
 { timestamps: false });
 
+const Tags = db.define('tags',
+{ tag_name: Sequelize.STRING,
+  product_name: Sequelize.STRING,
+  product_id: Sequelize.INTEGER},
+{ timestamps: false });
+
 Pics.belongsTo(Products, {as: 'product', foreignKey: 'product_id'});
+Tags.belongsTo(Products, {as: 'product', foreignKey: 'product_id'});
 
 module.exports = {
   Products,
-  Pics
+  Pics,
+  Tags
 }

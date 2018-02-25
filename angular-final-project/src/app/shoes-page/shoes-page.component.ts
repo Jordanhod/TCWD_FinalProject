@@ -17,7 +17,6 @@ export class ShoesPageComponent implements OnInit {
 
   shoes = [];
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

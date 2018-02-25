@@ -14,7 +14,7 @@
           <input required type="password" name='password' placeholder="Password" #myPassword='ngModel' [(ngModel)] = 'myPassword.input' [style.border]='(myPassword.valid || myPassword.untouched) ? none:"red 1px solid"' >
           <button name="submitButton" type="submit" (click)= 'loginRequest(myEmail.input, myPassword.input)'>Sign In</button>
       </form>
-
+      <p class='errorMessage'>{{errorMessage}}</p>
       <a class='forgotPass' routerLink="/forgot">forgot password</a>
 
     </div>

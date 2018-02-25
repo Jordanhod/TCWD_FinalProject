@@ -13,8 +13,7 @@ priceValue:number = 250;
 showPrice(value){
   this.priceValue = value;
 }
-num:number = 0;
-  ngOnInit() {
-  }
+
+ngOnInit() {}
 
 }

@@ -10,16 +10,6 @@ export class ForgotPasswordComponent implements OnInit {
 
   constructor(private login:UserLoginService) { }
 
-  username:string = '';
-  useremail:string = '';
-  userpassword:string = '';
-  input = {email: "" , password: ""};
-  i:number = 0;
-  index:number = -1;
-  LoginSuccess = '/sign-in';
-  UserIdentified = false;
-  Error = '';
-
   ngOnInit() {
   }
 

@@ -24,7 +24,7 @@ export class WishlistComponent implements OnInit {
     this.wish.removeItem(productId)
     .subscribe((res)=>{console.log(res);
     this.wish.getWishlist()
-    .subscribe((wishlistSQL)=>{console.log(wishlistSQL); this.Products = wishlistSQL})})
+    .subscribe((wishlistSQL)=>{this.Products = wishlistSQL})})
 }
   ngOnInit() {
   }

@@ -20,7 +20,7 @@ export class ProductPageMainComponent implements OnInit {
               private activeRoute:ActivatedRoute, private router:Router) {
       this.activeRoute.params.subscribe((param)=>{
             this.productName = param.productName;
-            this.PDetails.getProductSQL(this.productName)
+            this.PDetails.getProduct(this.productName)
             .subscribe((productObj)=>
                   {this.productDetails = productObj.productDetails;
                     this.pics = productObj.pics;
