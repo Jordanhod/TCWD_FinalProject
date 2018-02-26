@@ -14,6 +14,7 @@ export class ProductPageMainComponent implements OnInit {
   ParamProductName:string = '';
   productDetails = {id:1};
   pics = [];
+  tags = [];
   dresses = [];
 
   constructor(private PDetails:ProductDetailsService, private wish:WishlistService,
@@ -24,7 +25,8 @@ export class ProductPageMainComponent implements OnInit {
             .subscribe((productObj)=>
                   {this.productDetails = productObj.productDetails;
                     this.pics = productObj.pics;
-                    console.log('product', this.productDetails, this.pics)});
+                    this.tags = productObj.tags;
+                    console.log('product', this.productDetails, this.pics, this.tags)});
       })
   }
 

@@ -2,6 +2,19 @@ const productsSQL = require ('./products');
 
 let homepageSQL = [];
 let pics = [];
+let tags = [];
+
+function getTags(productName){
+  return new Promise ((resolve,reject)=>{
+    return productsSQL.Tags.findAll(({where:{product_name: productName}}))
+    .catch(rej=>console.log(rej))
+    .then((tagsFound)=>{
+      for (var i = 0; i < tagsFound.length; i++) {
+          tags[i] = tagsFound[i].tag_name}; console.log(tags);})
+    .catch((rej)=>{reject(rej); console.log(rej)})
+    .then(()=>{ resolve(tags)})
+  })
+}
 
 module.exports = {
   getHomepage(){
@@ -38,7 +51,8 @@ module.exports = {
     .then(()=>{return productsSQL.Pics.findAll(({where:{product_name: productName}}))})
     .catch(rej=>console.log(rej))
     .then((picsArr)=> {pics = [picsArr[0].pics, picsArr[1].pics, picsArr[2].pics];})
-    .then(()=> {return {productDetails, pics}})
+    .then(()=> {return getTags(productName)})
+    .then(()=> {return {productDetails, pics, tags}})
   },
 
 }

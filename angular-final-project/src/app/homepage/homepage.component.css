@@ -107,6 +107,9 @@ h1 {
   padding: 15px;
   text-align: center;
 }
+.shopbyBodytype strong {
+  font-variant: small-caps;
+}
 .bodyshapes-img {
   position: absolute;
   top:24%;

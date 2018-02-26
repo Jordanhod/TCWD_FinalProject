@@ -11,7 +11,6 @@ const Products = db.define('products',
   link: Sequelize.STRING,},
 { timestamps: false });
 
-
 const Pics = db.define('pics',
 { type: Sequelize.STRING,
   pics: Sequelize.STRING,

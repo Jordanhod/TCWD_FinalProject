@@ -6,11 +6,9 @@
   overflow: hidden;
   width: 1520px;
   background-repeat: no-repeat;
-  /* background-image: url('https://s8.favim.com/610/151006/ariana-grande-beach-blue-color-Favim.com-3400625.jpg'); */
   background-size: cover;
   border-bottom: 2px ridge #c2d8fc;
   background-color: #CE93D8;
-  /* background: linear-gradient(to bottom right, #968b99, #f5cffc); */
   margin:0;
   padding: 0;
   font-family: 'Alegreya Sans', sans-serif;
@@ -46,6 +44,7 @@
 .currency {
   align-self: right;
   position: absolute;
+  -webkit-appearance: none;
   left:95%;
   top: 20.5%;
   height: 30px;
