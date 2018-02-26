@@ -77,7 +77,7 @@ li {
 }
 .ActionButtons {
     position: relative;
-    top:100px;
+    top:60px;
     width: 570px;
     height: 119px;
 }
@@ -110,7 +110,7 @@ li {
 }
 .productTags {
     position: relative;
-    top:50px;
+    top:20px;
     font-family: 'Roboto', sans-serif;
     color:  #0baaaa;
     font-size: 15px;
