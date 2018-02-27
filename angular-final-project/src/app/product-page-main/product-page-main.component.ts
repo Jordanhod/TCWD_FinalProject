@@ -41,10 +41,10 @@ export class ProductPageMainComponent implements OnInit {
     }
   }
 
-  addToWishlist(){
+  addWishlist(){
     console.log(this.productDetails.id)
     this.wish.addItem(this.productDetails.id).subscribe((res)=>{
-      // console.log(res);
+      console.log(res.status);
       this.router.navigate([res.status]);
     })
   }

@@ -18,7 +18,7 @@
   position: relative;
   top:30%;
   left:20%;
-  height: 340px;
+  height: 380px;
   width: 60%;
   border: 1px solid #dfe3e8;
   background-color: #f4f6f8;
@@ -71,4 +71,33 @@ h4{
     text-align: center;
     padding-right:9px;
     margin: 0;
+}
+@media screen and (max-width: 400px){
+  .background{
+    height: 430px;
+  }
+  .container {
+    top: 47%;
+    left: 20%;
+    height: 180px;
+    width: 60%;
+  }
+  h4{
+    top:7%;
+    font-size: 20px;
+  }
+  .goto{
+    position: relative;
+    top:25%;
+    width: 100%;
+  }
+  .AddToWishlist {
+      width: 72px;
+      height: 40px;
+      color: #f4f6f8;
+      font-size: 1px;
+  }
+  .AddToWishlist .fa{
+      font-size: 25px;
+  }
 }

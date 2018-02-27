@@ -116,7 +116,7 @@ a {
 @media screen and (max-width: 1000px) {
       .header{
         height:160px;
-        width: 1100px;
+        width: 100%;
       }
       .logo{
         position: relative;
@@ -134,17 +134,17 @@ a {
       .navigationBar {
         position: absolute;
         left:140px;
-        width:500px;
+        width:400px;
         top:100px;
       }
       .user-details-nav {
         position: absolute;
-        left:63%;
+        left:76%;
         top:25%;
       }
       .currency {
         position: absolute;
-        left:73%;
+        left:89%;
         top: 20.5%;
         height: 30px;
         width: 30px;
@@ -157,6 +157,59 @@ a {
       }
       .search {
         position: absolute;
-        left: 61%;
+        left: 75%;
       }
+}
+@media screen and (max-width: 400px){
+  .logo{
+    position: relative;
+    left:10px;
+    top:10px;
+    width:140px;
+    font-size: 20px;
+  }
+  .subtitle{
+    position: relative;
+    left:10px;
+    width:150px;
+    font-size: 11px;
+  }
+  .navigationBar {
+    position: absolute;
+    left:3%;
+    width:300px;
+    top:100px;
+  }
+  .user-details-nav {
+    position: absolute;
+    left:67%;
+    top:10%;
+  }
+  .currency {
+    position: absolute;
+    left:90%;
+    top:10%;
+    height: 20px;
+    width: 20px;
+  }
+  .user-details-nav ul{
+    width: 70px;
+  }
+  .user-details-nav li{
+  font-size: 11px;
+  }
+  .search input{
+    font-size: 11px;
+    width: 85px;
+  }
+  .search {
+    position: absolute;
+    left: 70%;
+    top:60px;
+  }
+  .search .fa{
+    position: relative;
+    left: 65px;
+    top:-20px;
+  }
 }

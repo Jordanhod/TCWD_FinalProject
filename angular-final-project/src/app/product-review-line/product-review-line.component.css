@@ -74,3 +74,54 @@
     font-weight: 400;
     text-align: left;
 }
+
+@media screen and (max-width: 800px){
+  .reviewLine{
+    width: 310px;
+  }
+  .reviewLine p {
+      font-size: 12px;
+  }
+  .reviewLine .stars {
+      width:70px;
+      padding-right:5px;
+  }
+  .reviewLine .right p{
+    position: relative;
+    top:-2px;
+    padding-right: 4px;
+  }
+  .reviewLine .stars .full {
+      font-size: 14px;
+  }
+  .reviewLine .stars .empty {
+      font-size: 14px;
+  }
+  .center p {
+      padding-right: 2px;
+  }
+  .reviewLine .shareBox {
+      font-size: 12px;
+      width:100px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .reviewLine{
+    width: 300px;
+    height: 11px;
+  }
+  .center p{
+      width:70px;
+    }
+  .reviewLine .right {
+    position: relative;
+    top:2px;
+  }
+  .reviewLine .shareBox {
+      font-size: 12px;
+      position: relative;
+      top:-2px;
+      width:96px;
+  }
+}

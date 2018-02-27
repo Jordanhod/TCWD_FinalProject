@@ -14,8 +14,9 @@ app-header {
 }
 .dresses-menu {
   position: relative;
+  max-height: 1500px;
   top:200px;
-  width: inherit;
+  width:100%;
   height: inherit;
 }
  app-footer {
@@ -41,13 +42,13 @@ li {
 }
 
 @media screen and (max-width: 1200px) {
+  .brides-main{
+    position: absolute;
+    top:150px;
+  }
   img {
     width: 216px;
     height: 324px;
-  }
-  app-side-bar{
-    font-size: 12px;
-    visibility: hidden;
   }
   .dresses-menu {
     position: relative;
@@ -55,6 +56,11 @@ li {
   }
 }
 @media screen and (max-width: 800px) {
+  .brides-main{
+    position: absolute;
+    top:150px;
+    max-height: 1000px;
+  }
   img {
     width: 168px;
     height: 252px;
@@ -66,4 +72,19 @@ li {
     position: relative;
     top:0px;
   }
+   app-footer {
+    position: relative;
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  img {
+    width: 72px;
+    height: 108px;
+  }
+  app-footer {
+   position: relative;
+   top: 0px;
+ }
 }

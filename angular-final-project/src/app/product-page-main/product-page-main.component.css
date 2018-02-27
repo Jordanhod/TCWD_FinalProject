@@ -2,13 +2,11 @@
   position: absolute;
   top:350px;
   width: 100%;
-  min-width: 1200px;
   height: 900px;
   background-image: url('https://data.whicdn.com/images/190387266/large.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: #575153;
-  overflow: hidden;
 }
 h3 {
   position: relative;
@@ -146,4 +144,154 @@ li {
 }
 .productTags li:hover{
   cursor: pointer;
+}
+@media screen and (max-width: 800px){
+  .product-page {
+    position: absolute;
+    top:150px;
+    }
+  h3 {
+    position: relative;
+    left:250px;
+    top: 70px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .product-info {
+    position: relative;
+    left:100px;
+    height:550px;
+  }
+  .product_main_img {
+    height: 300px;
+  }
+  .thumbnail {
+    height: 75px;
+  }
+  .product-pics {
+    position: relative;
+    top: 5%;
+    padding-right: 30px;
+  }
+  .store img {
+    height: 20px;
+  }
+  .product-text {
+    width: 300px;
+    font-size:14px;
+  }
+  .ActionButtons {
+      position: relative;
+      top:10px;
+      left:-20px;
+      width: 310px;
+      height: 71px;
+  }
+  .ActionButtons button {
+      width: 150px;
+      height: 39px;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 1px;
+  }
+  .ActionButtons .fa{
+      font-size: 15px;
+  }
+  .productTags {
+      position: relative;
+      top:10px;
+      font-family: 'Roboto', sans-serif;
+      color:  #0baaaa;
+      font-size: 13px;
+      }
+  .productTags ul{
+    width:250px;
+  }
+}
+@media screen and (max-width: 400px){
+  h1 {
+    width:146px;
+    left:7px;
+  }
+  h3 {
+    position: relative;
+    left:150px;
+    top: 40px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .product-info {
+    position: relative;
+    max-width: 400px;
+    left:0px;
+    top:50px;
+    height:550px;
+  }
+  .product-pics {
+    padding: 0 10px 0 10px;
+  }
+  .product_main_img {
+    height: 130px;
+    width:86.66px;
+  }
+  .thumbnail {
+    height: 37.5px;
+    max-width: 30px;
+  }
+  .store {
+    position: relative;
+    left: -130px;
+    width:200px;
+    top:80px;
+  }
+  .store .title {
+    width:100px;
+  }
+  .store img {
+    position: relative;
+    height: 10px;
+    left:70px;
+    top:-41px;
+  }
+  .product-text {
+    width: 150px;
+    top: 20px;
+    left:5px;
+    font-size:11px;
+  }
+  .ActionButtons {
+      position: relative;
+      top:10px;
+      left:-130px;
+      width: 310px;
+      height: 71px;
+  }
+  .ActionButtons button {
+      width: 130px;
+      height: 40px;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+  }
+  .ActionButtons .fa{
+      font-size: 10px;
+      position: relative;
+      left: -3px;
+  }
+  .productTags {
+      font-size: 11px;
+      left:-130px;
+      top: 20px;
+    }
+  .productTags ul{
+    width:250px;
+  }
+  app-product-review-line{
+    position: relative;
+    left:-146px;
+    top:100px;
+  }
+  app-footer {
+   position: relative;
+   top: 800px;
+ }
 }

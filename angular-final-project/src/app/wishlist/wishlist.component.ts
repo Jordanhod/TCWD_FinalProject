@@ -14,7 +14,7 @@ import 'rxjs/add/operator/map';
 export class WishlistComponent implements OnInit {
 
   constructor(private PDetails:ProductDetailsService, private login:UserLoginService, private wish:WishlistService) {
-    this.wish.getWishlist().subscribe((wishlistSQL)=>{this.Products = wishlistSQL})
+    this.wish.getWishlist().subscribe((wishlistSQL)=>{console.log(wishlistSQL); this.Products = wishlistSQL})
   }
 
   Products = this.wish.myWishlist;
@@ -24,7 +24,7 @@ export class WishlistComponent implements OnInit {
     this.wish.removeItem(productId)
     .subscribe((res)=>{console.log(res);
     this.wish.getWishlist()
-    .subscribe((wishlistSQL)=>{this.Products = wishlistSQL})})
+    .subscribe((wishlistSQL)=>{console.log(wishlistSQL); this.Products = wishlistSQL})})
 }
   ngOnInit() {
   }

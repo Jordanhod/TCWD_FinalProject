@@ -56,6 +56,10 @@ li {
   }
 }
 @media screen and (max-width: 800px) {
+  .shoes-main{
+    position: absolute;
+    top:150px;
+  }
   img {
     width: 168px;
     height: 252px;
@@ -67,4 +71,18 @@ li {
     position: relative;
     top:0px;
   }
+  app-footer {
+   position: relative;
+   top: 50px;
+ }
+}
+@media screen and (max-width: 400px) {
+  img {
+    width: 72px;
+    height: 108px;
+  }
+  app-footer {
+   position: relative;
+   top: 0px;
+ }
 }

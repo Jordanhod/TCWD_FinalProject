@@ -15,7 +15,16 @@
 .creditline {
   position: relative;
   color:white;
+  margin: 0;
   float: right;
-  top:-5px;
-  right: 10px;
+  top:10px;
+  padding-right:10px;
+}
+app-site-map {
+  max-height: 160px
+}
+@media screen and (max-width: 400px) {
+  .creditline {
+    font-size: 12px;
+  }
 }

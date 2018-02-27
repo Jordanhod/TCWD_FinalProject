@@ -107,3 +107,60 @@ button {
   font-weight: 400;
   font-size: 14px;
 }
+@media screen and (max-width: 800px){
+  .container {
+    left:22%;
+  }
+}
+@media screen and (max-width: 400px){
+  .background{
+    height: 470px;
+  }
+  .container {
+    position: relative;
+    top:40%;
+    left:5%;
+    height: 238px;
+    width: 280px;
+  }
+  .SignInTab {
+    top:5px;
+    left:6px;
+    width: 127px;
+    height: 30px;
+  }
+  .RegisterTab {
+    width: 127px;
+    height: 30px;
+    top:-25px;
+    left:133px;
+  }
+  h1{
+    position: relative;
+    font-size: 1.5em;
+    top:-20px;
+  }
+  form {
+    width: 240px;
+    height: 90px;
+    position: relative;
+    top: -20px;
+    left:17px;
+  }
+  input {
+    height:20px;
+  }
+  button {
+    height:25px;
+  }
+  .forgotPass {
+    font-size: 12px;
+    left: 35%;
+  }
+  .errorMessage{
+    position: relative;
+    font-size: 12px;
+    top:-15px;
+    left: -10px;
+  }
+}
